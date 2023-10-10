@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  myxampp:
+    image: tomsik68/xampp:8.1.6
+    container_name: phpiggy
+    ports:
+      - "41061:22"
+      - "8080:80"
+    volumes:
+      - ./apache2/conf/httpd.conf:/opt/lampp/apache2/conf/httpd.conf
+      - ./apache2/conf/extra/httpd-vhosts.conf:/opt/lampp/apache2/conf/extra/httpd-vhosts.conf
+      - ./phpiggy/:/opt/lampp/htdocs/phpiggy/
