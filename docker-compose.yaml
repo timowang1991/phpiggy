@@ -11,3 +11,4 @@ services:
       - ./apache2/conf/httpd.conf:/opt/lampp/apache2/conf/httpd.conf
       - ./apache2/conf/extra/httpd-vhosts.conf:/opt/lampp/apache2/conf/extra/httpd-vhosts.conf
       - ./phpiggy/:/opt/lampp/htdocs/phpiggy/
+      - ./startup.sh:/startup.sh
