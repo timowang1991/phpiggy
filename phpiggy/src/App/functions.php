@@ -9,4 +9,6 @@ function dd(mixed $value) {
     die(); // stops to generate the page for quick debugging purpose
 }
 
-?>
+function e(mixed $value): string {
+    return htmlspecialchars((string) $value);
+}
